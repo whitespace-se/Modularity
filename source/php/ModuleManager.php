@@ -226,6 +226,9 @@ class ModuleManager
             $args['menu_icon_auto_import'] = true;
         }
 
+        // Allow altering of args before registering
+        $args = apply_filters('Modularity/Register/PostType', $args, $postTypeSlug);
+
         // Register the post type if module is enabled
         if (in_array($postTypeSlug, self::$enabled)) {
 
