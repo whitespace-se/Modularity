@@ -28,24 +28,27 @@ class ExpandableListTemplate
 
     public function getColumnValues()
     {
-        if (empty($this->data['posts_list_column_titles'])) {
-            return;
-        }
-
+        // if (empty($this->data['posts_list_column_titles'])) {
+        //     return;
+        // }
+        $count = 0;
         foreach ($this->data['posts'] as $post) {
             $column_values = array();
-
-            if ($this->data['posts_data_source'] === 'input') {
-                if ($post->column_values !== false && count($post->column_values) > 0) {
-                    foreach ($post->column_values as $key => $columnValue) {
-                        $column_values[sanitize_title($this->data['posts_list_column_titles'][$key]->column_header)] = $columnValue->value;
-                    }
-                }
-            } else {
-                $column_values = get_post_meta($post->ID, 'modularity-mod-posts-expandable-list', true);
+            $tmp = "data_".$count."_post_content";
+            if ($this->data['meta'][$tmp][0]) {
+              $post->post_content = $this->data['meta'][$tmp][0];
             }
-
+            if ($this->data['posts_data_source'] === 'input') {
+              if ($post->column_values !== false && count($post->column_values) > 0) {
+                  foreach ($post->column_values as $key => $columnValue) {
+                      $column_values[sanitize_title($this->data['posts_list_column_titles'][$key]->column_header)] = $columnValue->value;
+                  }
+              }
+            } else {
+              $column_values = get_post_meta($post->ID, 'modularity-mod-posts-expandable-list', true);
+            }
             $post->column_values = $column_values;
+            ++$count;
         }
     }
 }
