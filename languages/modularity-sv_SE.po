@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Modularity\n"
-"POT-Creation-Date: 2018-11-12 09:05+0100\n"
-"PO-Revision-Date: 2018-11-12 09:05+0100\n"
+"POT-Creation-Date: 2021-05-11 17:42+0200\n"
+"PO-Revision-Date: 2021-05-11 17:43+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Poedit 2.4.3\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: modularity.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -20,44 +20,44 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: App.php:136 App.php:167 App.php:198 plugins/acf/core/fields/image.php:91
+#: App.php:162 App.php:193 App.php:224 plugins/acf/core/fields/image.php:91
 #: plugins/acf/core/views/meta_box_fields.php:108
 msgid "Edit"
 msgstr "Redigera"
 
-#: App.php:136 source/php/Editor.php:124 source/php/Options/General.php:93
+#: App.php:162 source/php/Editor.php:124 source/php/Options/General.php:178
 msgid "Modules"
 msgstr "Moduler"
 
-#: App.php:168 App.php:199
+#: App.php:194 App.php:225
 msgid "Import"
 msgstr "Importera"
 
-#: App.php:169 App.php:200 plugins/acf/core/fields/image.php:90
+#: App.php:195 App.php:226 plugins/acf/core/fields/image.php:90
 msgid "Remove"
 msgstr "Ta bort"
 
-#: App.php:170 App.php:201
+#: App.php:196 App.php:227
 msgid "Hide module"
 msgstr "Dölj modulen"
 
-#: App.php:171 App.php:202
+#: App.php:197 App.php:228
 msgid "Are you sure you want to remove this module?"
 msgstr "Är du säker på att du vill ta bort modulen?"
 
-#: App.php:172 App.php:203
+#: App.php:198 App.php:229
 msgid "Saving…"
 msgstr "Sparar…"
 
-#: App.php:173 App.php:204
+#: App.php:199 App.php:230
 msgid "Close"
 msgstr "Stäng"
 
-#: App.php:174 App.php:205
+#: App.php:200 App.php:231
 msgid "Width"
 msgstr "Bredd"
 
-#: App.php:176 App.php:207 templates/options/partials/modularity-modules.php:27
+#: App.php:202 App.php:233 templates/options/partials/modularity-modules.php:27
 msgid "Deprecated"
 msgstr "Utgående"
 
@@ -1145,17 +1145,17 @@ msgstr ""
 msgid "Awesome. Let's get to work"
 msgstr ""
 
-#: plugins/acf/core/controllers/input.php:63
+#: plugins/acf/core/controllers/input.php:64
 #, fuzzy
 #| msgid "Expandable List"
 msgid "Expand Details"
 msgstr "Expanderbar lista"
 
-#: plugins/acf/core/controllers/input.php:64
+#: plugins/acf/core/controllers/input.php:65
 msgid "Collapse Details"
 msgstr ""
 
-#: plugins/acf/core/controllers/input.php:67
+#: plugins/acf/core/controllers/input.php:68
 msgid "Validation Failed. One or more fields below are required."
 msgstr ""
 
@@ -1299,8 +1299,6 @@ msgid "Dummy"
 msgstr ""
 
 #: plugins/acf/core/fields/email.php:19
-#: source/php/AcfFields/php/mod-contacts.php:453
-#: source/php/AcfFields/php/mod-contacts.php:458
 msgid "Email"
 msgstr ""
 
@@ -1889,6 +1887,7 @@ msgstr ""
 
 #: plugins/acf/core/fields/user.php:18
 #: plugins/acf/core/views/meta_box_location.php:94
+#: source/php/AcfFields/php/mod-contacts.php:390
 #: source/php/AcfFields/php/mod-social.php:145
 msgid "User"
 msgstr "Användare"
@@ -2323,8 +2322,6 @@ msgid "Last name"
 msgstr "Efternamn"
 
 #: source/php/AcfFields/php/mod-contact-contacts.php:114
-#: source/php/AcfFields/php/mod-contacts.php:421
-#: source/php/AcfFields/php/mod-contacts.php:426
 msgid "Work title"
 msgstr "Jobbtitel"
 
@@ -2338,8 +2335,6 @@ msgid "Epost"
 msgstr "E-post"
 
 #: source/php/AcfFields/php/mod-contact-contacts.php:174
-#: source/php/AcfFields/php/mod-contacts.php:485
-#: source/php/AcfFields/php/mod-contacts.php:490
 msgid "Phone"
 msgstr "Telefon"
 
@@ -2350,7 +2345,7 @@ msgstr "Adress"
 
 #: source/php/AcfFields/php/mod-contact-contacts.php:216
 #: source/php/AcfFields/php/mod-contact-info.php:247
-#: source/php/Module/Contacts/views/cards.blade.php:52
+#: source/php/Module/Contacts/views/cards.blade.php:104
 #: templates/module/modularity-mod-contact/modularity-mod-contact-cards.php:103
 msgid "Visiting address"
 msgstr "Besöksadress"
@@ -2365,12 +2360,11 @@ msgid "Select user"
 msgstr "Välj användare"
 
 #: source/php/AcfFields/php/mod-contact-contacts.php:306
-#: source/php/AcfFields/php/mod-contacts.php:38
 msgid "Kontakter"
 msgstr "Kontakter"
 
 #: source/php/AcfFields/php/mod-contact-contacts.php:322
-#: source/php/AcfFields/php/mod-contacts.php:576
+#: source/php/AcfFields/php/mod-contacts.php:449
 #: source/php/AcfFields/php/mod-index.php:295
 #: source/php/AcfFields/php/mod-posts-displau.php:83
 #: source/php/AcfFields/php/mod-slider.php:80
@@ -2378,7 +2372,7 @@ msgid "1"
 msgstr ""
 
 #: source/php/AcfFields/php/mod-contact-contacts.php:323
-#: source/php/AcfFields/php/mod-contacts.php:577
+#: source/php/AcfFields/php/mod-contacts.php:450
 #: source/php/AcfFields/php/mod-index.php:296
 #: source/php/AcfFields/php/mod-posts-displau.php:84
 #: source/php/AcfFields/php/mod-slider.php:81
@@ -2386,7 +2380,7 @@ msgid "2"
 msgstr ""
 
 #: source/php/AcfFields/php/mod-contact-contacts.php:324
-#: source/php/AcfFields/php/mod-contacts.php:578
+#: source/php/AcfFields/php/mod-contacts.php:451
 #: source/php/AcfFields/php/mod-index.php:297
 #: source/php/AcfFields/php/mod-posts-displau.php:85
 #: source/php/AcfFields/php/mod-slider.php:82
@@ -2394,7 +2388,7 @@ msgid "3"
 msgstr ""
 
 #: source/php/AcfFields/php/mod-contact-contacts.php:325
-#: source/php/AcfFields/php/mod-contacts.php:579
+#: source/php/AcfFields/php/mod-contacts.php:452
 #: source/php/AcfFields/php/mod-index.php:298
 #: source/php/AcfFields/php/mod-posts-displau.php:86
 #: source/php/AcfFields/php/mod-slider.php:83
@@ -2402,6 +2396,7 @@ msgid "4"
 msgstr ""
 
 #: source/php/AcfFields/php/mod-contact-contacts.php:335
+#: source/php/AcfFields/php/mod-contacts.php:422
 #: source/php/AcfFields/php/mod-fileslist.php:55
 #: source/php/AcfFields/php/mod-index.php:308
 #: source/php/AcfFields/php/mod-posts-displau.php:40
@@ -2449,6 +2444,7 @@ msgid "Web phone number"
 msgstr "Telefonnummer (webb)"
 
 #: source/php/AcfFields/php/mod-contacts.php:6
+#: source/php/AcfFields/php/mod-contacts.php:38
 #: source/php/Module/Contact/Contact.php:14
 msgid "Contacts"
 msgstr "Kontakter"
@@ -2457,33 +2453,85 @@ msgstr "Kontakter"
 msgid "Horizontal cards"
 msgstr "Horisontella kort"
 
-#: source/php/AcfFields/php/mod-contacts.php:338
-#: source/php/AcfFields/php/mod-contacts.php:343
-msgid "Advanced mode"
-msgstr ""
-
-#: source/php/AcfFields/php/mod-contacts.php:357
-#: source/php/AcfFields/php/mod-contacts.php:362
+#: source/php/AcfFields/php/mod-contacts.php:53
 #, fuzzy
-#| msgid "Mobile image"
-msgid "Profile image"
-msgstr "Bild för mobil"
+#| msgid "Fields"
+msgid "Custom"
+msgstr "Fält"
 
-#: source/php/AcfFields/php/mod-contacts.php:389
-#: source/php/AcfFields/php/mod-contacts.php:394
-msgid "Other user info"
+#: source/php/AcfFields/php/mod-contacts.php:416
+#, fuzzy
+#| msgid "Add column"
+msgid "Add contact"
+msgstr "Lägg till kolumn"
+
+#: source/php/AcfFields/php/mod-contacts.php:466
+msgid "Compact mode"
 msgstr ""
 
-#: source/php/AcfFields/php/mod-contacts.php:517
-#: source/php/AcfFields/php/mod-contacts.php:522
+#: source/php/AcfFields/php/mod-contacts.php:488
+#: source/php/AcfFields/php/mod-posts-displau.php:322
+#: templates/options/partials/modularity-modules.php:16
+#: templates/options/partials/modularity-post-types.php:8
+msgid "Enabled"
+msgstr "Aktiverad"
+
+#: source/php/AcfFields/php/mod-contacts.php:489
+#: source/php/AcfFields/php/mod-posts-displau.php:323
+msgid "Disabled"
+msgstr ""
+
+#: source/php/AcfFields/php/mod-contacts.php:493
+#, fuzzy
+#| msgid "Display options"
+msgid "Display settings"
+msgstr "Visningsalternativ"
+
+#: source/php/AcfFields/php/mod-contacts.php:505
+#, fuzzy
+#| msgid "Work title"
+msgid "Hide Work Title"
+msgstr "Jobbtitel"
+
+#: source/php/AcfFields/php/mod-contacts.php:506
+#, fuzzy
+#| msgid "Administration unit"
+msgid "Hide Administration Unit"
+msgstr "Förvaltning"
+
+#: source/php/AcfFields/php/mod-contacts.php:507
+msgid "Hide Thumbnail"
+msgstr ""
+
+#: source/php/AcfFields/php/mod-contacts.php:508
+#, fuzzy
+#| msgid "Hide image"
+msgid "Hide Email"
+msgstr "Dölj bild"
+
+#: source/php/AcfFields/php/mod-contacts.php:509
+#, fuzzy
+#| msgid "Hide module"
+msgid "Hide Phone"
+msgstr "Dölj modulen"
+
+#: source/php/AcfFields/php/mod-contacts.php:510
+#, fuzzy
+#| msgid "Social Media Feed"
+msgid "Hide Social media"
+msgstr "Social Media flöde"
+
+#: source/php/AcfFields/php/mod-contacts.php:511
 #, fuzzy
 #| msgid "Adress"
-msgid "Address"
+msgid "Hide Adress"
 msgstr "Adress"
 
-#: source/php/AcfFields/php/mod-contacts.php:549
-msgid "Kolumner"
-msgstr ""
+#: source/php/AcfFields/php/mod-contacts.php:512
+#, fuzzy
+#| msgid "Visiting address"
+msgid "Hide Visiting Adress"
+msgstr "Besöksadress"
 
 #: source/php/AcfFields/php/mod-files.php:21
 #: source/php/AcfFields/php/mod-fileslist.php:154
@@ -2840,7 +2888,7 @@ msgid "Filter posts by taxonomy"
 msgstr "Filtrera efter taxonomi"
 
 #: source/php/AcfFields/php/mod-latest.php:248
-#: source/php/AcfFields/php/mod-posts-filtering.php:10
+#: source/php/AcfFields/php/mod-posts-filtering.php:12
 msgid "Taxonomy filter"
 msgstr "Filtrera taxomnomi"
 
@@ -2865,7 +2913,7 @@ msgid "post_format"
 msgstr ""
 
 #: source/php/AcfFields/php/mod-latest.php:277
-#: source/php/AcfFields/php/mod-posts-filtering.php:29
+#: source/php/AcfFields/php/mod-posts-filtering.php:31
 msgid "Taxonomy type"
 msgstr "Taxonomi"
 
@@ -2932,12 +2980,6 @@ msgstr "Notis"
 #: source/php/AcfFields/php/mod-notice.php:734
 msgid "Ikon"
 msgstr ""
-
-#: source/php/AcfFields/php/mod-posts-displau.php:6
-#, fuzzy
-#| msgid "Taxonomy display"
-msgid "Data display"
-msgstr "Visning av taxnomi"
 
 #: source/php/AcfFields/php/mod-posts-displau.php:10
 msgid "Display as"
@@ -3018,16 +3060,6 @@ msgstr "Tillåt filtrering"
 msgid "Highlight post"
 msgstr ""
 
-#: source/php/AcfFields/php/mod-posts-displau.php:322
-#: templates/options/partials/modularity-modules.php:16
-#: templates/options/partials/modularity-post-types.php:8
-msgid "Enabled"
-msgstr "Aktiverad"
-
-#: source/php/AcfFields/php/mod-posts-displau.php:323
-msgid "Disabled"
-msgstr ""
-
 #: source/php/AcfFields/php/mod-posts-displau.php:327
 msgid "Date format"
 msgstr ""
@@ -3045,67 +3077,71 @@ msgstr ""
 msgid "Placeholder image"
 msgstr "Affischbild"
 
-#: source/php/AcfFields/php/mod-posts-filtering.php:6
+#: source/php/AcfFields/php/mod-posts-filtering.php:8
 msgid "Data filtering"
 msgstr "Filtrera data"
 
-#: source/php/AcfFields/php/mod-posts-filtering.php:22
+#: source/php/AcfFields/php/mod-posts-filtering.php:24
 msgid "Yes, filter posts based on taxonomy"
 msgstr "Ja, filtrera data baserat på taxonomi"
 
-#: source/php/AcfFields/php/mod-posts-filtering.php:63
+#: source/php/AcfFields/php/mod-posts-filtering.php:65
+msgid "Taxonomy operator"
+msgstr "Taxonomi operatör"
+
+#: source/php/AcfFields/php/mod-posts-filtering.php:98
 msgid "Taxonomy value"
 msgstr "Taxonomivärde"
 
-#: source/php/AcfFields/php/mod-posts-filtering.php:97
+#: source/php/AcfFields/php/mod-posts-filtering.php:132
 msgid "Meta filter"
 msgstr "Metafilter"
 
-#: source/php/AcfFields/php/mod-posts-filtering.php:109
+#: source/php/AcfFields/php/mod-posts-filtering.php:144
 msgid "Yes, filter posts based on meta"
 msgstr "Ja, filtrera inlägg baserat på inläggsmeta"
 
-#: source/php/AcfFields/php/mod-posts-filtering.php:116
+#: source/php/AcfFields/php/mod-posts-filtering.php:151
 msgid "Meta key"
 msgstr "Metanyckel"
 
-#: source/php/AcfFields/php/mod-posts-filtering.php:150
+#: source/php/AcfFields/php/mod-posts-filtering.php:185
 msgid "Meta value"
 msgstr "Metavärde"
 
-#: source/php/AcfFields/php/mod-posts-filtering.php:179
+#: source/php/AcfFields/php/mod-posts-filtering.php:214
 msgid "Front End taxonomy filtering"
 msgstr ""
 
-#: source/php/AcfFields/php/mod-posts-filtering.php:206
+#: source/php/AcfFields/php/mod-posts-filtering.php:241
 msgid "Front End Text search"
 msgstr ""
 
-#: source/php/AcfFields/php/mod-posts-filtering.php:233
+#: source/php/AcfFields/php/mod-posts-filtering.php:268
 msgid "Front End Date range"
 msgstr ""
 
-#: source/php/AcfFields/php/mod-posts-filtering.php:260
+#: source/php/AcfFields/php/mod-posts-filtering.php:295
 msgid "Front End Taxonomy"
 msgstr ""
 
-#: source/php/AcfFields/php/mod-posts-filtering.php:287
+#: source/php/AcfFields/php/mod-posts-filtering.php:322
 msgid "Front End Button text"
 msgstr ""
 
-#: source/php/AcfFields/php/mod-posts-filtering.php:314
+#: source/php/AcfFields/php/mod-posts-filtering.php:349
 msgid "Front End Hide date"
 msgstr ""
 
-#: source/php/AcfFields/php/mod-posts-filtering.php:317
+#: source/php/AcfFields/php/mod-posts-filtering.php:352
 msgid "Hide date range options behind a button"
 msgstr ""
 
-#: source/php/AcfFields/php/mod-posts-filtering.php:346
+#: source/php/AcfFields/php/mod-posts-filtering.php:381
 msgid "Front End Display"
 msgstr ""
 
-#: source/php/AcfFields/php/mod-posts-filtering.php:349
+#: source/php/AcfFields/php/mod-posts-filtering.php:384
 msgid "Show all filter options on same row"
 msgstr ""
 
@@ -3204,14 +3240,24 @@ msgstr "Välj hur RSS-flödet ska sorteras"
 msgid "Summary"
 msgstr "Sammanfattning"
 
-#: source/php/AcfFields/php/mod-script.php:15
+#: source/php/AcfFields/php/mod-script.php:6
+#, fuzzy
+#| msgid "Embed code"
+msgid "Embed"
+msgstr "Embed-kod"
+
+#: source/php/AcfFields/php/mod-script.php:10
 msgid "Embed code"
 msgstr "Embed-kod"
 
-#: source/php/AcfFields/php/mod-script.php:18
+#: source/php/AcfFields/php/mod-script.php:13
+#, fuzzy
+#| msgid ""
+#| "Paste your script code here (with &lt;style&gt; &lt;script&gt; tags if "
+#| "needed). "
 msgid ""
 "Paste your script code here (with &lt;style&gt; &lt;script&gt; tags if "
-"needed). "
+"needed)."
 msgstr ""
 "Klistra in din skriptkod här (med &lt;style&gt; &lt;script&gt; taggar om det "
 "behövs). "
@@ -3791,7 +3837,7 @@ msgstr ""
 msgid "Ämne"
 msgstr ""
 
-#: source/php/Display.php:340 templates/widget/form.php:30
+#: source/php/Display.php:368 templates/widget/form.php:30
 msgid "Edit module"
 msgstr "Redigera modul"
 
@@ -3799,27 +3845,27 @@ msgstr "Redigera modul"
 msgid "View Page"
 msgstr "Visa sida"
 
-#: source/php/Editor.php:156
+#: source/php/Editor.php:152
 msgid "Modularity editor"
 msgstr "Modularity redigerare"
 
-#: source/php/Editor.php:157
+#: source/php/Editor.php:153
 msgid "Editor"
 msgstr "Redigerare"
 
-#: source/php/Editor.php:175
+#: source/php/Editor.php:171
 msgid "Save modules"
 msgstr "Spara moduler"
 
-#: source/php/Editor.php:186
+#: source/php/Editor.php:182
 msgid "Enabled modules"
 msgstr "Aktiverade moduler"
 
-#: source/php/Editor.php:231
+#: source/php/Editor.php:228
 msgid "No active sidebar areas"
 msgstr "Inga aktiva sidebars"
 
-#: source/php/Editor.php:233
+#: source/php/Editor.php:230
 msgid ""
 "There's no active sidebars. Please activate sidebar areas in the Modularity "
 "Options to add modules."
@@ -3827,23 +3873,23 @@ msgstr ""
 "Det finns inga aktiva sidebars. Du kan aktivera sidebars under sidan "
 "”Modularity -> Options”."
 
-#: source/php/Editor.php:536
+#: source/php/Editor.php:540
 msgid "Modules saved"
 msgstr "Moduler sparades"
 
-#: source/php/Editor.php:621
+#: source/php/Editor.php:625
 msgid "Inherit"
 msgstr "Ärv"
 
-#: source/php/Editor.php:682
+#: source/php/Editor.php:686
 msgid "Scope styling"
 msgstr "Utseende"
 
-#: source/php/Editor.php:686
+#: source/php/Editor.php:690
 msgid "Select an apperance for this instance of module"
 msgstr "Välj ett alternativt utseende för den här modulen."
 
-#: source/php/Editor.php:689
+#: source/php/Editor.php:693
 msgid ""
 "By selecting a scope for this class, they will appear in a different way "
 "than the standard layout."
@@ -3851,7 +3897,7 @@ msgstr ""
 "Välj ett specialutseende för den här modulen som passar ditt syfte med "
 "innehållet. "
 
-#: source/php/Helper/Acf.php:35
+#: source/php/Helper/Acf.php:31
 msgid ""
 "To get the full expirience of the <strong>Modularity</strong> plugin, please "
 "activate the <a href=\"http://www.advancedcustomfields.com/pro/\" target="
@@ -3876,7 +3922,7 @@ msgstr "Visar en eller flera kontakter"
 msgid "Contacts v2"
 msgstr "Kontakter v2"
 
-#: source/php/Module/Contacts/views/cards.blade.php:45
+#: source/php/Module/Contacts/views/cards.blade.php:96
 #: templates/module/modularity-mod-contact/modularity-mod-contact-cards.php:94
 msgid "Postal address"
 msgstr "Adress"
@@ -3986,11 +4032,11 @@ msgstr "Inlägg"
 msgid "Outputs selected posts in specified layout"
 msgstr "Visar valda inlägg i en vald layout"
 
-#: source/php/Module/Posts/Posts.php:283
+#: source/php/Module/Posts/Posts.php:284
 msgid "Taxonomy display"
 msgstr "Visning av taxnomi"
 
-#: source/php/Module/Posts/Posts.php:532
+#: source/php/Module/Posts/Posts.php:533
 msgid "Modularity expandable list column values"
 msgstr "Expanderbar lista - kolumninnehåll"
 
@@ -3999,7 +4045,7 @@ msgid "Load more"
 msgstr "Ladda in fler"
 
 #: source/php/Module/Posts/TemplateController/HorizontalTemplate.php:50
-#: source/php/Module/Social/Feed.php:579 source/php/Module/Social/Feed.php:618
+#: source/php/Module/Social/Feed.php:582 source/php/Module/Social/Feed.php:621
 msgid "ago"
 msgstr "sedan"
 
@@ -4018,7 +4064,7 @@ msgid "Filter on…"
 msgstr "Filtrera på…"
 
 #: source/php/Module/Posts/views/expandable-list.blade.php:89
-#: source/php/Module/Posts/views/horizontal.blade.php:61
+#: source/php/Module/Posts/views/horizontal.blade.php:60
 msgid "Nothing to display…"
 msgstr "Inget att visa…"
 
@@ -4110,15 +4156,15 @@ msgstr "Visar flera bilder eller filmer i ett bildspel"
 msgid "Video playback unavailable, please activate JavaScript to enable."
 msgstr "Videouppspelning är inte tillgänglig."
 
-#: source/php/Module/Social/Social.php:14
+#: source/php/Module/Social/Social.php:16
 msgid "Social Media Feed"
 msgstr "Social Media flöde"
 
-#: source/php/Module/Social/Social.php:15
+#: source/php/Module/Social/Social.php:17
 msgid "Sociala Media Feeds"
 msgstr "Sociala Medie flöden"
 
-#: source/php/Module/Social/Social.php:16
+#: source/php/Module/Social/Social.php:18
 msgid ""
 "Outputs a social media feed from desired username or hashtag (facebook, "
 "instagram, twitter, linkedin)."
@@ -4134,63 +4180,63 @@ msgstr "Tabeller"
 msgid "Outputs a flexible table with options."
 msgstr "Visar en tabell"
 
-#: source/php/Module/Table/Table.php:76
+#: source/php/Module/Table/Table.php:96
 msgid "There was an error opening the selected .csv-file."
 msgstr "Det uppstod ett fel när den valda .csv-filen skulle öppnas."
 
-#: source/php/Module/Table/Table.php:120
+#: source/php/Module/Table/Table.php:140
 msgid "No data available in table"
 msgstr "Inga rader i tabellen"
 
-#: source/php/Module/Table/Table.php:121
+#: source/php/Module/Table/Table.php:141
 msgid "Showing _START_ to _END_ of _TOTAL_ entries"
 msgstr "Visar _START_ till _END_ av _TOTAL_ rader"
 
-#: source/php/Module/Table/Table.php:122
+#: source/php/Module/Table/Table.php:142
 msgid "Showing 0 to 0 of 0 entries"
 msgstr "Visar 0 till 0 av 0 rader"
 
-#: source/php/Module/Table/Table.php:123
+#: source/php/Module/Table/Table.php:143
 msgid "filtered from _MAX_ total entries"
 msgstr "filtrerad från _MAX_ rader"
 
-#: source/php/Module/Table/Table.php:124
+#: source/php/Module/Table/Table.php:144
 msgid "Show _MENU_ entries"
 msgstr "Visa _MENU_ rader"
 
-#: source/php/Module/Table/Table.php:125
+#: source/php/Module/Table/Table.php:145
 msgid "Loading..."
 msgstr "Laddar…"
 
-#: source/php/Module/Table/Table.php:126
+#: source/php/Module/Table/Table.php:146
 msgid "Processing..."
 msgstr "Laddar–"
 
-#: source/php/Module/Table/Table.php:127
+#: source/php/Module/Table/Table.php:147
 msgid "No matching records found"
 msgstr "Inga matchande rader hittades"
 
-#: source/php/Module/Table/Table.php:128
+#: source/php/Module/Table/Table.php:148
 msgid "First"
 msgstr "Första"
 
-#: source/php/Module/Table/Table.php:129
+#: source/php/Module/Table/Table.php:149
 msgid "Last"
 msgstr "Sista"
 
-#: source/php/Module/Table/Table.php:130
+#: source/php/Module/Table/Table.php:150
 msgid "Next"
 msgstr "Nästa"
 
-#: source/php/Module/Table/Table.php:131
+#: source/php/Module/Table/Table.php:151
 msgid "Previous"
 msgstr "Föregående"
 
-#: source/php/Module/Table/Table.php:132
+#: source/php/Module/Table/Table.php:152
 msgid "activate to sort column ascending"
 msgstr "aktivera för att sortera kolumnen i stigande ordning"
 
-#: source/php/Module/Table/Table.php:133
+#: source/php/Module/Table/Table.php:153
 msgid "activate to sort column descending"
 msgstr "aktivera för att sortera kolumnen i fallande ordning"
 
@@ -4329,6 +4375,43 @@ msgstr "fler"
 msgid "Options saved successfully"
 msgstr "Inställningarna sparades"
 
+#: source/php/Options/AcfFields/acf-module-restrictions.php:6
+#, fuzzy
+#| msgid "Module description"
+msgid "Sidebar & Module Restrictions"
+msgstr "Modulbeskrivning"
+
+#: source/php/Options/AcfFields/acf-module-restrictions.php:29
+msgid "Settings"
+msgstr ""
+
+#: source/php/Options/AcfFields/acf-module-restrictions.php:33
+#, fuzzy
+#| msgid "Template areas"
+msgid "Template Areas"
+msgstr "Mallområden"
+
+#: source/php/Options/AcfFields/acf-module-restrictions.php:45
+msgid "Checking this will override the default module area settings."
+msgstr ""
+
+#: source/php/Options/AcfFields/acf-module-restrictions.php:55
+#, fuzzy
+#| msgid "Module description"
+msgid "Module Restrictions"
+msgstr "Modulbeskrivning"
+
+#: source/php/Options/AcfFields/acf-module-restrictions.php:67
+msgid ""
+"Checking this will filter the default module settings for each template."
+msgstr ""
+
+#: source/php/Options/AcfFields/acf-module-restrictions.php:161
+#, fuzzy
+#| msgid "No active sidebar areas"
+msgid "Active Sidebars"
+msgstr "Inga aktiva sidebars"
+
 #: source/php/Options/Archives.php:37 source/php/Options/Archives.php:38
 msgid "Archive modules"
 msgstr "Arkivmoduler"
@@ -4365,23 +4448,29 @@ msgstr "Modularity inställningar"
 msgid "Search page modules"
 msgstr "Moduler på söksida"
 
-#: source/php/Options/General.php:39
+#: source/php/Options/General.php:30 source/php/Options/General.php:31
+#, fuzzy
+#| msgid "Description"
+msgid "Restrictive Options"
+msgstr "Beskrivning"
+
+#: source/php/Options/General.php:124
 msgid "Save options"
 msgstr "Spara inställningar"
 
-#: source/php/Options/General.php:51
+#: source/php/Options/General.php:136
 msgid "Core options"
 msgstr "Core inställningar"
 
-#: source/php/Options/General.php:63
+#: source/php/Options/General.php:148
 msgid "Module options"
 msgstr "Modulinställningar"
 
-#: source/php/Options/General.php:75
+#: source/php/Options/General.php:160
 msgid "Post types"
 msgstr "Posttyper"
 
-#: source/php/Options/General.php:84
+#: source/php/Options/General.php:169
 msgid "Template areas"
 msgstr "Mallområden"
 
@@ -4532,6 +4621,21 @@ msgstr "Modulärt komponentssytem för WordPress"
 #. Author of the plugin/theme
 msgid "Kristoffer Svanmark, Sebastian Thulin"
 msgstr "Kristoffer Svanmark, Sebastian Thulin"
+
+#, fuzzy
+#~| msgid "Mobile image"
+#~ msgid "Profile image"
+#~ msgstr "Bild för mobil"
+
+#, fuzzy
+#~| msgid "Adress"
+#~ msgid "Address"
+#~ msgstr "Adress"
+
+#, fuzzy
+#~| msgid "Taxonomy display"
+#~ msgid "Data display"
+#~ msgstr "Visning av taxnomi"
 
 #~ msgid "Data sorting"
 #~ msgstr "Sortera"
