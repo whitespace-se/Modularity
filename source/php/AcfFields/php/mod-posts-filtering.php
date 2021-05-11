@@ -1,7 +1,9 @@
 <?php 
 
-if (function_exists('acf_add_local_field_group')) {
-    acf_add_local_field_group(array(
+
+if (function_exists('acf_add_local_field_group')) {
+
+    acf_add_local_field_group(array(
     'key' => 'group_571e045dd555d',
     'title' => __('Data filtering', 'modularity'),
     'fields' => array(
@@ -41,7 +43,7 @@
                 ),
             ),
             'wrapper' => array(
-                'width' => 50,
+                'width' => 33,
                 'class' => '',
                 'id' => 'modularity-latest-taxonomy',
             ),
@@ -59,6 +61,39 @@
             'readonly' => 0,
         ),
         2 => array(
+            'key' => 'field_609a6c2fae66e',
+            'label' => __('Taxonomy operator', 'modularity'),
+            'name' => 'posts_taxonomy_operator',
+            'type' => 'select',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => array(
+              array(
+                'field' => 'field_571e046536f0f',
+                'operator' => '==',
+                'value' => '1',
+              ),
+            ),
+            'wrapper' => array(
+              'width' => 33,
+              'class' => '',
+              'id' => '',
+            ),
+            'choices' => array(
+              1 => 'Är',
+              0 => 'Inte är',
+            ),
+            'multiple' => 0,
+            'allow_null' => 0,
+            'default_value' => 1,
+            'ui' => 0,
+            'ajax' => 0,
+            'placeholder' => '',
+            'return_format' => 'value',
+            'disabled' => 0,
+            'readonly' => 0,
+        ),
+        3 => array(
             'key' => 'field_571e049636f11',
             'label' => __('Taxonomy value', 'modularity'),
             'name' => 'posts_taxonomy_value',
@@ -75,7 +110,7 @@
                 ),
             ),
             'wrapper' => array(
-                'width' => 50,
+                'width' => 33,
                 'class' => '',
                 'id' => 'modularity-latest-taxonomy-value',
             ),
@@ -92,7 +127,7 @@
             'disabled' => 0,
             'readonly' => 0,
         ),
-        3 => array(
+        4 => array(
             'key' => 'field_571e04a736f12',
             'label' => __('Meta filter', 'modularity'),
             'name' => 'posts_meta_filter',
@@ -111,7 +146,7 @@
             'ui_on_text' => '',
             'ui_off_text' => '',
         ),
-        4 => array(
+        5 => array(
             'key' => 'field_571e04c736f13',
             'label' => __('Meta key', 'modularity'),
             'name' => 'posts_meta_key',
@@ -145,7 +180,7 @@
             'disabled' => 0,
             'readonly' => 0,
         ),
-        5 => array(
+        6 => array(
             'key' => 'field_571e04da36f14',
             'label' => __('Meta value', 'modularity'),
             'name' => 'posts_meta_value',
@@ -174,7 +209,7 @@
             'readonly' => 0,
             'disabled' => 0,
         ),
-        6 => array(
+        7 => array(
             'key' => 'field_5af2f2e486366',
             'label' => __('Front End taxonomy filtering', 'modularity'),
             'name' => 'front_end_tax_filtering',
@@ -201,7 +236,7 @@
             'ui_on_text' => '',
             'ui_off_text' => '',
         ),
-        7 => array(
+        8 => array(
             'key' => 'field_5af2f64510be1',
             'label' => __('Front End Text search', 'modularity'),
             'name' => 'front_end_tax_filtering_text_search',
@@ -228,7 +263,7 @@
             'ui_on_text' => '',
             'ui_off_text' => '',
         ),
-        8 => array(
+        9 => array(
             'key' => 'field_5af2f68810be2',
             'label' => __('Front End Date range', 'modularity'),
             'name' => 'front_end_tax_filtering_dates',
@@ -255,7 +290,7 @@
             'ui_on_text' => '',
             'ui_off_text' => '',
         ),
-        9 => array(
+        10 => array(
             'key' => 'field_5af2f6fb10be3',
             'label' => __('Front End Taxonomy', 'modularity'),
             'name' => 'front_end_tax_filtering_taxonomy',
@@ -282,7 +317,7 @@
             'ui_on_text' => '',
             'ui_off_text' => '',
         ),
-        10 => array(
+        11 => array(
             'key' => 'field_5b0d0c3f955b6',
             'label' => __('Front End Button text', 'modularity'),
             'name' => 'front_end_button_text',
@@ -309,7 +344,7 @@
             'append' => '',
             'maxlength' => '',
         ),
-        11 => array(
+        12 => array(
             'key' => 'field_5b0d103f8dc5a',
             'label' => __('Front End Hide date', 'modularity'),
             'name' => 'front_end_hide_date',
@@ -341,7 +376,7 @@
             'ui_on_text' => '',
             'ui_off_text' => '',
         ),
-        12 => array(
+        13 => array(
             'key' => 'field_5b0d10e78dc5b',
             'label' => __('Front End Display', 'modularity'),
             'name' => 'front_end_display',
@@ -387,4 +422,5 @@
     'active' => 1,
     'description' => '',
 ));
-}
+
+}

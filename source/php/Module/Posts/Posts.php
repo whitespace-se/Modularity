@@ -788,12 +788,15 @@ class Posts extends \Modularity\Module
         if (isset($fields->posts_taxonomy_filter) && $fields->posts_taxonomy_filter === true) {
             $taxType = $fields->posts_taxonomy_type;
             $taxValues = (array)$fields->posts_taxonomy_value;
+            $taxOperator = ($fields->posts_taxonomy_operator == 0) ? 'NOT IN' : 'IN';
+
 
             foreach ($taxValues as $term) {
                 $getPostsArgs['tax_query'][] = array(
                     'taxonomy' => $taxType,
                     'field' => 'slug',
-                    'terms' => $term
+                    'terms' => $term,
+                    'operator' => $taxOperator
                 );
             }
         }
