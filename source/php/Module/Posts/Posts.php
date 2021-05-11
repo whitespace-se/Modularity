@@ -795,7 +795,8 @@ class Posts extends \Modularity\Module
                 $getPostsArgs['tax_query'][] = array(
                     'taxonomy' => $taxType,
                     'field' => 'slug',
-                    'terms' => $taxOperator
+                    'terms' => $term,
+                    'operator' => $taxOperator
                 );
             }
         }
