@@ -45,8 +45,8 @@ class Wp
 
         $templates = array();
 
-        foreach ($paths as $path) {
-            foreach ($search as $pattern) {
+        foreach ($search as $pattern) {
+            foreach ($paths as $path) {
                 foreach ($fileExt as $ext) {
                     $foundTemplates = array();
                     foreach (glob($path . '/' . $pattern . $ext) as $found) {
