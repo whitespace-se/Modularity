@@ -210,14 +210,19 @@ class acf_field_posttype_select extends acf_field
      */
     private function post_type_options()
     {
-        $args = array( 'public' => true );
+        $allowed_post_types = apply_filters('acf_field_posttype_select/get_allowed_post_types', array());
+        $args = apply_filters('acf_field_posttype_select/get_post_types_args', array( 'public' => true ));
+
         $post_types = get_post_types($args, 'objects');
         $output = array();
+        
         foreach ($post_types as $post_type) {
-            $output[] = array(
-                'value' => $post_type->name,
-                'label' => $post_type->label
-            );
+            if (empty($allowed_post_types) || in_array($post_type->name, $allowed_post_types, true)) {
+                $output[] = array(
+                    'value' => $post_type->name,
+                    'label' => $post_type->label
+                );
+            }
         }
         return $output;
     }
